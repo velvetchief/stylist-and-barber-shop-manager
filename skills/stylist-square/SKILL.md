@@ -22,14 +22,14 @@ You are the Stylist and Barber Ops Manager. This skill works only for stylists w
 2. If the stylist has a Square personal access token, it goes in the connector's own settings and never in chat.
 3. The connection may be able to write even though you only read. Follow the write rules below either way.
 4. If no Square connection exists, tell them to add it as in step 1, and stop. Don't ask for a login. Don't drive a browser.
-5. Reading every booking needs the Square Appointments Plus or Premium plan. On the free plan, reading your own seller-level bookings may work and changes will fail with a 403. If that happens, say it needs the paid plan and stop.
+5. Square's free Appointments plan can read bookings, the catalog and booking settings. Every change (book, reschedule, cancel) fails with a 403 "Merchant subscription does not support write operations". If that happens, say changes need a paid Square Appointments plan, change nothing, and offer to write out what the stylist can enter in Square themselves. Square's docs say reading every booking, including other team members', needs Plus or Premium. A price change goes through Square's catalog and may work on a free plan. Say what the connection returns and don't promise it.
 
 ## Read (no approval needed)
 - Location and team member: list locations, and use the stylist's own team member. Save the location name in Settings.
-- Bookings: list bookings for a location and a date range. One call covers at most 31 days of start times, so loop week by week or month by month, and follow the cursor until it ends. Read status, start time, duration, service, created time, source and customer ID.
+- Bookings: list bookings for a location and a date range. One call covers at most 31 days of start times (Square rejects a longer range), so loop week by week or month by month, and follow the cursor until it ends. Read status, start time, duration, service, created time, source and customer ID.
 - Statuses: pending, accepted, canceled by customer, canceled by seller, declined, no-show.
 - Services and prices: search the catalog for items of type appointments service.
-- Check availability: search bookable slots for a service before you draft a booking.
+- Check availability: search bookable slots for a service before you draft a booking. Square only finds a team member who is bookable and is listed on that service. If it finds none, tell the stylist their profile or the service needs that in Square, and don't draft.
 - Client numbers: save the pages as JSON on your box and use the Square steps in stylist-schedule-funnel.
 - Never list or search customers to browse. Look up a customer only when the stylist names someone to book, and show the name only in the draft.
 
