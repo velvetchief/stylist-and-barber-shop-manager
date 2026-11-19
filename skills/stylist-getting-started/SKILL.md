@@ -11,7 +11,7 @@ description: >-
 
 Say in one line: "I keep your receipts, what you made, your miles and your product in your own Google Drive, and every Monday I tell you what you kept. You just chat with me." Then ask the questions below one at a time, and wait for each answer.
 
-1. **Names.** Ask for their suite name. If the suite has no name, use their own name. Then say "I'll call your folder and your Sheet <Suite name> Back Office. Want a different name?" Use what they pick for both, and write the two chosen names to Settings as Folder name and Sheet name. The default is only a default. Never hardcode a name.
+1. **Names.** Ask for their suite name. If the suite has no name, use their own name. Then say "I'll call your folder and your Sheet <Suite name> Back Office. Want a different name?" Use what they pick for both. Hold the two names until the Settings tab exists in step 3. The default is only a default. Never hardcode a name.
 2. **Connect Google Drive and Google Sheets.** If they aren't connected, show the connect card. Wait until both work.
 3. **Create the files.** Create the top folder with the folder name they chose, with Receipts and Reports inside it. Don't create the YYYY-MM month folders now. The stylist-books skill creates each one the first time it's needed. Then create one Sheet with the Sheet name they chose. **Create the Sheet with the Google Drive connector, as a spreadsheet inside the top folder.** Don't create it with the Sheets connector: it saves it in the root of My Drive, and it can't be moved or deleted afterward. A new Sheet starts with one tab called Sheet1. Rename that tab to Receipts, and don't leave a Sheet1 behind. Then use the Sheets connector to add the other tabs and set the headers on all of them:
    - Receipts: Date, Vendor, Category, Total, Paid with, Items, File, Status, Key, Added
@@ -23,7 +23,7 @@ Say in one line: "I keep your receipts, what you made, your miles and your produ
    - Review: Date added, Type, File link, What's unclear, Status
    - Column maps: App, Report, Their column, Means, Confirmed on
 
-   Read the folder back and show the stylist its link.
+   Once the Settings tab exists, write two rows to it, with today's date: Folder name and Sheet name, set to the names they chose. Don't write them earlier. Then read the folder back and show the stylist its link.
 4. **Settings.** Ask these one at a time and write each answer to Settings with today's date. Never fill an answer in for them.
    - **Tax set-aside.** "What percentage do you want me to remind you to set aside each week?" Wait for a number. If they ask what to pick, say that's a question for their tax preparer, and that you'll use whatever number they choose. Then ask whether the percentage applies to what they made after costs, or to everything that came in. Say once: "This is a reminder at your number. It's not tax advice."
    - **Tips.** "Should I count tips in what you made?" Default yes if they have no preference.
