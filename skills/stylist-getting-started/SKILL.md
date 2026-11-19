@@ -5,7 +5,8 @@ description: >-
   barber who just installed the Stylist and Barber Ops Manager template:
   connect Drive and Sheets, create the folder and Sheet, set the tax
   set-aside percentage, rent, mileage rate and reminder dates, link their
-  booking app, and schedule the Monday note.
+  booking app, choose optional add-ons (schedule and client numbers, website
+  visits, Square changes, Google Business Profile), and schedule the Monday note.
 ---
 # Getting started (solo stylist or barber)
 
@@ -32,8 +33,17 @@ Say in one line: "I keep your receipts, what you made, your miles and your produ
    - **Estimated-tax reminders.** "Do you want me to remind you on dates for estimated tax payments? Type the dates you want, with a label for each, and tell me if each repeats every year." They can skip this. For each date, read it back as a full date, for example "April 15, 2027, repeats every year. Right?", and write it only after they say yes. Store each one as a Reminder row in Settings, exactly as the stylist-books skill defines. If they ask which dates to use, say that is a question for their tax preparer. Never suggest a date or an amount.
    - **Time zone** and the **time** they want the Monday note. Default 8:00 AM.
 5. **Booking app.** Ask "Which app do you use for bookings and payments?" and offer Square, GlossGenius, Vagaro, Booksy and Other. Note the answer in Settings. Explain that they export a report from the app and upload it in chat. Give the steps for their app from the stylist-books skill. Never ask for an app password or key. On the first upload, run the column mapping from stylist-books and confirm it with them.
+5a. **Add-ons.** Offer these one at a time, in plain words, and let them say yes or skip each. Skipping costs nothing and they can add one later. Write their choices to Settings (Add-ons) with today's date. Create an add-on's tabs and routines only after they say yes to it.
+   - **My week and my numbers** (stylist-schedule-funnel). "I can show your week and tell you how many clients rebook, no-shows, cancellations, new and returning clients, your average ticket and how full your book is. For your week I read the Google calendar your booking app syncs to. The numbers come from an appointment report you upload, or straight from Square." By app:
+     - Square, GlossGenius or Vagaro: if their app syncs to Google Calendar, ask which calendar and save it as Calendar name. Connect Google Calendar if needed. Square sync needs Square's Plus or Premium plan.
+     - Booksy: no calendar sync is documented, so the week comes from uploads only.
+     - Ask how many hours they are open on each weekday, and write them to the Open hours rows. Ask for the booking page address if they want website numbers.
+   - **Website visits** (Google Analytics, only if they have a website with Google Analytics). "I can show how many people visit your site and click your booking link." Connect Google Analytics, pick the property, and write the booking link domain.
+   - **Changes in Square** (stylist-square, only for Square Appointments). "I can book, move or cancel an appointment and change a service price in Square, but only after you say yes to that one change. I never change anything on my own." Connect Square from its own sign-in card. Never ask them to paste a key.
+   - **Google Business Profile** (stylist-business-profile, optional). "I can show how people find you on Google and tell you when a new review comes in, with a reply ready for you to approve. Google has to approve access first, and your profile must be verified for 60 days and list a website." If they say yes, tell them what is needed and offer to check later. If the connection isn't there, leave it off and say how to turn it on.
+   Say once: "I only read your calendar and reports. I never message your clients, and I never post or change anything without your yes.
 6. **Product (optional now).** Ask which color and retail items they want to watch, with a par for each and a usual supplier. They can type a list, upload a file, or skip and add items later. Write what they give into Stock and par.
-7. **Routines.** Create a routine that runs the Monday note from the stylist-books skill at the chosen time, and reports to the stylist in this chat. If they typed estimated-tax reminder dates, create a second routine that runs each morning, checks Settings, and messages only on a date they typed. If Mileage is on, offer one more routine: a one-line Friday evening message, "Any drives to log this week?" Create it only if they say yes.
+7. **Routines.** If they picked Google Business Profile and it works, create a routine twice a day (default 9:00 AM and 5:00 PM) that runs only the new-review check from stylist-business-profile, reports in this chat, and never posts. No routine ever changes anything in Square or on a profile. Create a routine that runs the Monday note from the stylist-books skill at the chosen time, and reports to the stylist in this chat. If they typed estimated-tax reminder dates, create a second routine that runs each morning, checks Settings, and messages only on a date they typed. If Mileage is on, offer one more routine: a one-line Friday evening message, "Any drives to log this week?" Create it only if they say yes.
 8. **Test.** Ask them to send one receipt photo now. When it's read, show the vendor, date and total, and ask whether they match the paper. If the photo couldn't be opened, ask for a flatter, brighter one.
 
-Save the suite name, the folder and Sheet names, booking app, time zone and the Monday time to memory. Never save keys, passwords or client details anywhere. Finish with a short summary of what's set up and what's still missing.
+Save the suite name, the folder and Sheet names, booking app, add-ons, time zone and the Monday time to memory. Never save keys, passwords or client details anywhere. Finish with a short summary of what's set up and what's still missing.
