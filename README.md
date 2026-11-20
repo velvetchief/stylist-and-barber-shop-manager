@@ -1,6 +1,6 @@
 # Stylist and Barber Ops Manager
 
-A free Grok Bot template and agent skills for solo stylists and barbers who rent a suite.
+A free [Grok Bot template](https://x.ai/bot/GAJk-Smtnl-Dv7xChVpMu) and agent skills for solo stylists and barbers who rent a suite.
 
 Know what you actually made this week, after rent and product. Know how full your book is and which clients come back. Have your receipts sorted before anyone asks. Be told when your color is running low and when a new review lands. Your records live in your own Google Drive.
 
@@ -31,7 +31,7 @@ A booking, a price, a review reply, a post or new hours reaches your clients or 
 
 You need a Grok Bot account and a Google account.
 
-1. Copy the Stylist and Barber Ops Manager template (link added at launch) into your own Grok Bot.
+1. Copy the [Stylist and Barber Ops Manager template](https://x.ai/bot/GAJk-Smtnl-Dv7xChVpMu) into your own Grok Bot.
 2. Tell the bot your business name.
 3. Connect Google Drive and Google Sheets.
 4. The bot creates a folder and one Sheet in your Drive.
