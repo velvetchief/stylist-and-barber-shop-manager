@@ -1,4 +1,4 @@
-# Stylist and Barber Ops Manager
+# Stylist and Barber Shop Manager
 
 A free [Grok Bot template](https://x.ai/bot/GAJk-Smtnl-Dv7xChVpMu) and agent skills for solo stylists and barbers who rent a suite.
 
@@ -31,7 +31,7 @@ A booking, a price, a review reply, a post or new hours reaches your clients or 
 
 You need a Grok Bot account and a Google account.
 
-1. Copy the [Stylist and Barber Ops Manager template](https://x.ai/bot/GAJk-Smtnl-Dv7xChVpMu) into your own Grok Bot.
+1. Copy the [Stylist and Barber Shop Manager template](https://x.ai/bot/GAJk-Smtnl-Dv7xChVpMu) into your own Grok Bot.
 2. Tell the bot your business name.
 3. Connect Google Drive and Google Sheets.
 4. The bot creates a folder and one Sheet in your Drive.
@@ -78,4 +78,4 @@ Square, GlossGenius, Vagaro, Booksy and Google are named only to say which expor
 
 ## License
 
-MIT. Stylist and Barber Ops Manager is free. Your records stay in your own Google Drive.
+MIT. Stylist and Barber Shop Manager is free. Your records stay in your own Google Drive.

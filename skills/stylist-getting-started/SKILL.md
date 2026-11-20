@@ -2,7 +2,7 @@
 name: stylist-getting-started
 description: >-
   Use for the first conversation with a solo suite-renting hairstylist or
-  barber who just installed the Stylist and Barber Ops Manager template:
+  barber who just installed the Stylist and Barber Shop Manager template:
   connect Drive and Sheets, create the folder and Sheet, set the tax
   set-aside percentage, rent, mileage rate and reminder dates, link their
   booking app, choose optional add-ons (schedule and client numbers, website

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reference calculations for the Stylist and Barber Ops Manager skills.
+"""Reference calculations for the Stylist and Barber Shop Manager skills.
 
 Global option: --today YYYY-MM-DD (before the subcommand) fixes the date for tests.
 Subcommands (all print JSON, none writes anywhere but stdout):
